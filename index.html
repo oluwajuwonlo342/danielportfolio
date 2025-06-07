@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awoloro Daniel - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1d1d1d;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url(abstract_pattern_design_background_2007.jpg);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .hero p {
+      color: #777;
+    }
+    .btn-orange {
+      background-color: #ff7a00;
+      color: white;
+      border: none;
+    }
+    .btn-orange:hover {
+      background-color: #e26a00;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 30px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .skills-bar {
+      background: #eee;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    .skills-bar span {
+      display: block;
+      height: 100%;
+      line-height: 25px;
+      background-color: #ff7a00;
+      text-align: right;
+      padding-right: 10px;
+      color: white;
+    }
+    #projects .card {
+      transition: transform 0.3s;
+    }
+    #projects .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    @keyframes fadeInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+        .skill-box h5 {
+      font-weight: 600;
+      color: #333;
+    }
+    .progress {
+      height: 20px;
+      border-radius: 30px;
+      background-color: #e9ecef;
+      overflow: hidden;
+    }
+    .progress-bar {
+      font-weight: 600;
+      line-height: 20px;
+      padding-left: 10px;
+      animation: fillBar 2s ease-in-out forwards;
+    }
+    @keyframes fillBar {
+      0% { width: 0; }
+      100% { width: var(--bar-width); }
+    }
+    @media (max-width: 768px) {
+      .progress {
+        height: 16px;
+      }
+      .progress-bar {
+        font-size: 0.8rem;
+      }
+    }
+    #testimonials .carousel-item {
+      text-align: center;
+    }
+    #testimonials .testimonial {
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 2rem;
+      border-radius: 1rem;
+      background-color: #6c757d;
+    }
+    #testimonials p {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #f8f9fa;
+    }
+    #testimonials h6 {
+      font-weight: bold;
+      color: #ffc107;
+    }
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 2px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">D<span style="color:#ff7a00">aniel</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  <section class="hero" id="home">
+    <div class="container pt-5" data-aos="fade-down">
+      <h1>Hello! I'm Awoloro Daniel</h1>
+      <p class="lead">Full Stack Developer - UI/UX & Web Developer</p>
+      <a href="#contact" class="btn btn-orange btn-lg mt-3">Let's Talk</a>
+    </div>
+  </section>  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-up">What Can I Do For You</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa fa-pencil-alt fa-2x mb-2 text-orange"></i>
+          <h5>UI/UX Design</h5>
+          <p>20 Projects Done</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa fa-box-open fa-2x mb-2 text-orange"></i>
+          <h5>Product Design</h5>
+          <p>15 Projects Done</p>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa fa-globe fa-2x mb-2 text-orange"></i>
+          <h5>Web Development</h5>
+          <p>45 Projects Done</p>
+        </div>
+      </div>
+    </div>
+  </section>  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center section-title" data-aos="fade-up">Latest Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card">
+            <img src="Screenshot 2025-06-07 171137.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project One</h5>
+              <p class="card-text">A website Designed for Aanuore Services</p>
+              <p class="Check"><a href="https://aanuoreservice.co.uk/">Check it out</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card">
+            <img src="Screenshot 2025-06-07 171748.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project Two</h5>
+              <p class="card-text"><strong>Spadrive:</strong> Website that connect both Car owners and Detailers together</p>
+              <p class="Check"><a href="https://spadrive.vercel.app/">Check it out</a></p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card">
+            <img src="Screenshot 2025-06-07 172517.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project Three</h5>
+              <p class="card-text"><strong>BayoCorp:</strong>An interior Design Website</p>
+              <p class="Check"><a href="https://bayocorp.bayocorp.uk/">Check it out</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">My Skills & Advantages</h2>
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="skill-box mb-4">
+          <h5>Figma <span class="float-end">95%</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-primary" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill-box mb-4">
+          <h5>Adobe Photoshop <span class="float-end">91%</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-secondary" style="width: 91%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="skill-box mb-4">
+          <h5>Javascript <span class="float-end">90%</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-box mb-4">
+          <h5>WordPress <span class="float-end">93%</span></h5>
+          <div class="progress">
+            <div class="progress-bar bg-danger" style="width: 93%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">What Clients Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Jones">
+            <p>“Absolutely loved working with him! Professional, timely, and incredibly talented.”</p>
+            <h6 class="mt-3">– Sarah Jones</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="David Lee">
+            <p>“He delivered more than expected. Our site looks amazing now and performs even better.”</p>
+            <h6 class="mt-3">– David Lee</h6>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Linda Mark">
+            <p>“Top-notch design skills and a great sense of user experience. Highly recommended!”</p>
+            <h6 class="mt-3">– Linda Mark</h6>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+   <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">Get In Touch</h2>
+      <form class="row g-3" id="contactForm">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-orange">Send Message</button>
+        </div>
+      </form>
+      <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+        Thank you! Your message has been sent.
+      </div>
+    </div>
+  </section> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if(name && email && message) {
+        document.getElementById("formAlert").classList.remove("d-none");
+        this.reset();
+      }
+    });
+
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+     document.addEventListener("DOMContentLoaded", () => {
+  AOS.init(); // Moved inside DOMContentLoaded to ensure DOM is ready
+
+  document.querySelectorAll(".progress-bar").forEach(bar => {
+    const width = bar.style.width;
+
+    // If width is not set via inline style, get computed style instead
+    const finalWidth = width || getComputedStyle(bar).width;
+
+    bar.style.setProperty('--bar-width', finalWidth);
+    bar.style.width = '0';
+
+    // Use requestAnimationFrame for smoother animation triggering
+    requestAnimationFrame(() => {
+      bar.style.width = finalWidth;
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
